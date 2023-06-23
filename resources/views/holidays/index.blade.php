@@ -7,12 +7,14 @@
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 <h1>Holidays</h1>
-
+<h2>Use a two-letter country code to specify the countries for which you want to retrieve holiday data. </h2>
+<div class="container"></div>
 <form action="{{ route('holidays.index') }}" method="GET">
     <label for="country">Country:</label>
     <input type="text" name="country" id="country" value="{{ old('country', 'US') }}">
